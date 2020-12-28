@@ -1,10 +1,5 @@
-//
-// Created by zagig on 24.12.2020.
-//
-
 #include "Json.hpp"
 #include <Student.hpp>
-
 Table::Table() {}
 void Table::parsing_file(const std::string& path_file) {
   std::ifstream file(path_file, std::ifstream::in);

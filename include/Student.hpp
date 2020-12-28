@@ -1,10 +1,5 @@
-//
-// Created by zagig on 24.12.2020.
-//
-
 #ifndef TEMPLATE_STUDENT_HPP
 #define TEMPLATE_STUDENT_HPP
-
 #include <iostream>
 #include <any>
 #include <string>
@@ -33,6 +28,5 @@ class Student {
   std::any avg;
   std::any debt;
 };
-
 
 #endif  // TEMPLATE_STUDENT_HPP

@@ -1,7 +1,3 @@
-//
-// Created by zagig on 24.12.2020.
-//
-
 #include <Student.hpp>
 using nlohmann::json;
 

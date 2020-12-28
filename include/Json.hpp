@@ -1,10 +1,5 @@
-//
-// Created by zagig on 24.12.2020.
-//
-
 #ifndef TEMPLATE_JSON_HPP
 #define TEMPLATE_JSON_HPP
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -21,6 +16,5 @@ class Table {
   std::vector<Student> students_all;
 
 };
-
 
 #endif  // TEMPLATE_JSON_HPP

@@ -29,7 +29,7 @@ TEST(File_path, mistake_file_path) {
     table.parsing_file(file_path);
     std::stringstream out;
     out << table << std::endl;
-  } catch (std::string ERROR){
+  } catch (std::string ERROR) {
     error1 = ERROR;
     std::cout << "mistake is here: " << ERROR << std::endl;
   }
@@ -46,7 +46,7 @@ TEST(Value_input, test_debt) {
     table.parsing_file(file_path);
     std::stringstream out;
     out << table << std::endl;
-  } catch (std::string ERROR){
+  } catch (std::string ERROR) {
     error1 = ERROR;
     std::cout << "mistake is here: " << ERROR << std::endl;
   }
@@ -64,7 +64,7 @@ TEST(Value_input, test_group) {
     table.parsing_file(file_path);
     std::stringstream out;
     out << table << std::endl;
-  } catch (std::string ERROR){
+  } catch (std::string ERROR) {
     error1 = ERROR;
     std::cout << "mistake is here: " << ERROR << std::endl;
   }
@@ -81,7 +81,7 @@ TEST(Value_input, test_avg) {
     table.parsing_file(file_path);
     std::stringstream out;
     out << table << std::endl;
-  } catch (std::string ERROR){
+  } catch (std::string ERROR) {
     error1 = ERROR;
     std::cout << "mistake is here: " << ERROR << std::endl;
   }
@@ -98,7 +98,7 @@ TEST(Value_input, fail_count) {
     table.parsing_file(file_path);
     std::stringstream out;
     out << table << std::endl;
-  } catch (std::string ERROR){
+  } catch (std::string ERROR) {
     error1 = ERROR;
     std::cout << "mistake is here: " << ERROR << std::endl;
   }

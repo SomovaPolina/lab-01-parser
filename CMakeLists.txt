@@ -20,14 +20,11 @@ HunterGate(
 
 # TODO: rename project and delete this comment
 project(lab-01-parser)
-if(CMAKE_SYSTEM_NAME STREQUAL Linux)
-  string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
-  string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
-  string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
-elseif (CMAKE_SYSTEM_NAME STREQUAL Windows)
-  string(APPEND CMAKE_CXX_FLAGS " /Wall /Za")
-endif()
-cmake_policy(SET CMP0074 NEW)
+string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
+string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
+string(APPEND CMAKE_CXX_FLAGS " -lgcov --coverage")
+string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
+
 
 hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)

@@ -88,7 +88,7 @@ TEST(Value_input, test_avg) {
   EXPECT_EQ(error1,check);
 }
 
-TEST(Value_input, test_meta) {
+TEST(Value_input, fail_count) {
   std::string error1;
   std::string check =
       "Items don't equal meta\n";

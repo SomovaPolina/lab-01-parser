@@ -85,7 +85,7 @@ R"({
       "name": "Sidorov Ivan",
       "group": 31,
       "avg": 4,
-      "debt": "C++"
+      "debt": 4
     },
     {
       "name": "Petrov Nikita",
@@ -136,7 +136,7 @@ TEST(Value_input, test_group) {
     },
     {
       "name": "Sidorov Ivan",
-      "group": 31,
+      "group": 3.1,
       "avg": 4,
       "debt": "C++"
     },
@@ -195,7 +195,7 @@ TEST(Value_input, test_avg) {
     {
       "name": "Petrov Nikita",
       "group": "IU8-31",
-      "avg": 3.33,
+      "avg": [4],
       "debt": [
         "C++",
         "Linux",
@@ -256,7 +256,7 @@ TEST(Value_input, fail_count) {
     }
   ],
   "_meta": {
-    "count": 3
+    "count": 2
   }
 })";
   std::ofstream test_file;
